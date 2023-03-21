@@ -1,12 +1,12 @@
 package Task1;
 
 public class Person {
-    String name;
-    String surname;
-    String birthDate;
-    String address;
-    String phone;
-    String email;
+    protected String name;
+    protected String surname;
+    protected String birthDate;
+    protected String address;
+    protected String phone;
+    protected String email;
 
     public Person(String name, String surname, String birthDate, String address, String phone, String email) {
         this.name = name;
@@ -15,6 +15,25 @@ public class Person {
         this.address = address;
         this.phone = phone;
         this.email = email;
+    }
+
+    String getName() {
+        return name;
+    }
+    String getSurname() {
+        return surname;
+    }
+    String getBirthDate() {
+        return birthDate;
+    }
+    String getAddress() {
+        return address;
+    }
+    String getPhone() {
+        return phone;
+    }
+    String getEmail() {
+        return email;
     }
 
     public void show() {

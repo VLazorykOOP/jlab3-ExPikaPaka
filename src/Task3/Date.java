@@ -13,6 +13,16 @@ public class Date implements Triad {
         value3 = date.getYear();
     }
 
+    int getValue1() {
+        return value1;
+    }
+    int getValue2() {
+        return value2;
+    }
+    int getValue3() {
+        return value3;
+    }
+
     public void increment() {
         LocalDate date = LocalDate.of(value3, value2, value1);
         date = date.plusDays(1);

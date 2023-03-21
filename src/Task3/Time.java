@@ -13,6 +13,16 @@ public class Time implements Triad {
         value3 = time.getSecond();
     }
 
+    int getValue1() {
+        return value1;
+    }
+    int getValue2() {
+        return value2;
+    }
+    int getValue3() {
+        return value3;
+    }
+    
     public void increment() {
         LocalTime time = LocalTime.of(value1, value2, value3);
         time = time.plusSeconds(1);

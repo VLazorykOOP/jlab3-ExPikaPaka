@@ -1,8 +1,8 @@
 package Task1;
 
 public class Student extends Person {
-    String group;
-    String recordBookNumber;
+    protected String group;
+    protected String recordBookNumber;
     double averageGrade;
 
     public Student(String name, String surname, String birthDate, String address, String phone, String email, String group, String recordBookNumber, double averageGrade) {
@@ -12,6 +12,15 @@ public class Student extends Person {
         this.averageGrade = averageGrade;
     }
 
+    String getGroup() {
+        return group;
+    }
+    String getRecordBookNumber() {
+        return recordBookNumber;
+    }
+    double getAverageGrade() {
+        return averageGrade;
+    }
     public void show() {
         super.show();
         System.out.println("Група: " + group);

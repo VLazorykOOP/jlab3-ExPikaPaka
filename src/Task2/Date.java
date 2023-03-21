@@ -7,6 +7,16 @@ public class Date extends Triad {
         super(date.getDayOfMonth(), date.getMonthValue(), date.getYear());
     }
 
+    int getValue1() {
+        return value1;
+    }
+    int getValue2() {
+        return value2;
+    }
+    int getValue3() {
+        return value3;
+    }
+
     public void increment() {
         LocalDate date = LocalDate.of(value3, value2, value1);
         date = date.plusDays(1);
@@ -15,6 +25,8 @@ public class Date extends Triad {
         value2 = date.getMonthValue();
         value3 = date.getYear();
     }
+
+
 
     public void printValue() {
         System.out.printf("%02d/%02d/%04d", this.value1, this.value2, this.value3);
